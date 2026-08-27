@@ -1,0 +1,248 @@
+/* --- Variables de Colores y Tipografía --- */
+:root {
+    --color-negro: #111111;
+    --color-negro-suave: #1a1a1a;
+    --color-menta: #A3E4D7;
+    --color-menta-oscuro: #45B39D;
+    --color-blanco: #FFFFFF;
+    --color-gris-claro: #F9F9F9;
+    --fuente: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--fuente);
+    background-color: var(--color-negro);
+    color: var(--color-blanco);
+    line-height: 1.6;
+}
+
+/* --- Header --- */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: var(--color-negro-suave);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(163, 228, 215, 0.2);
+}
+
+.logo {
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--color-menta);
+}
+
+.nav a {
+    color: var(--color-blanco);
+    text-decoration: none;
+    margin-left: 30px;
+    font-size: 0.9rem;
+    font-weight: 300;
+    transition: color 0.3s ease;
+}
+
+.nav a:hover {
+    color: var(--color-menta);
+}
+
+.btn-nav {
+    border: 1px solid var(--color-menta);
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+
+/* --- Hero Section --- */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(rgba(17,17,17,0.75), rgba(17,17,17,0.85)), url('zapas.jpg') no-repeat center center/cover;
+    padding: 0 20px;
+}
+.hero-content h1 {
+    font-size: 2.6rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: var(--color-blanco);
+}
+
+.hero-content p {
+    font-size: 1.05rem;
+    font-weight: 300;
+    max-width: 650px;
+    margin: 0 auto 30px auto;
+    color: #e0e0e0;
+}
+
+.btn-primary {
+    background-color: var(--color-menta-oscuro);
+    color: var(--color-blanco);
+    padding: 12px 28px;
+    border: none;
+    border-radius: 4px;
+    font-family: var(--fuente);
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--color-menta);
+    color: var(--color-negro);
+}
+
+/* --- Colección --- */
+.collection {
+    padding: 100px 50px;
+    background-color: var(--color-negro);
+    text-align: center;
+}
+
+.collection h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: var(--color-menta);
+}
+
+.section-subtitle {
+    font-weight: 300;
+    color: #b0b0b0;
+    margin-bottom: 50px;
+}
+
+.grid-products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.product-card {
+    background-color: var(--color-negro-suave);
+    border: 1px solid rgba(163, 228, 215, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--color-menta-oscuro);
+}
+
+.product-img {
+    height: 250px;
+    background-color: #333;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Imágenes de ejemplo (placeholders acordes a zapatillas/chatitas) */
+.placeholder-1 { background-image: url('https://images.unsplash.com/photo-1560769629-975ec94e6a86?auto=format&fit=crop&w=600&q=80'); }
+.placeholder-2 { background-image: url(../practico.jpg); }
+.placeholder-3 { background-image: url('https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=600&q=80'); }
+
+.product-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
+.product-card p {
+    font-size: 0.85rem;
+    color: #999;
+    margin-bottom: 15px;
+}
+
+.price {
+    font-weight: 600;
+    color: var(--color-menta);
+}
+
+/* --- Personalización --- */
+.customization {
+    padding: 80px 20px;
+    background-color: var(--color-negro-suave);
+    text-align: center;
+}
+
+.custom-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.customization h2 {
+    color: var(--color-menta);
+    margin-bottom: 10px;
+}
+
+.customization p {
+    color: #b0b0b0;
+    font-size: 0.95rem;
+}
+
+.custom-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 30px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+.form-group select,
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--color-negro);
+    border: 1px solid var(--color-menta-oscuro);
+    color: var(--color-blanco);
+    border-radius: 4px;
+    font-family: var(--fuente);
+}
+
+.form-group input::placeholder {
+    color: #666;
+}
+
+/* --- Footer --- */
+.footer {
+    padding: 40px;
+    text-align: center;
+    background-color: var(--color-negro);
+    font-size: 0.85rem;
+    color: #777;
+    border-top: 1px solid rgba(255,255,255,0.05);
+}
+
+.footer p + p {
+    margin-top: 5px;
+}

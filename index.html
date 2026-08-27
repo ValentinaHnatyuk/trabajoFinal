@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ValentinaHechoAmano | Calzado Cómodo y Exclusivo para Eventos</title>
+    <!-- Google Fonts: Montserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Archivo CSS Separado -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header / Navegación -->
+    <header class="header">
+        <div class="logo">ValentinaHechoAmano</div>
+        <nav class="nav">
+            <a href="#inicio">Inicio</a>
+            <a href="#coleccion">Colección</a>
+            <a href="#personalizacion">Diseño Personalizado</a>
+            <a href="#contacto" class="btn-nav">Contacto</a>
+        </nav>
+    </header>
+
+    <!-- Sección Hero -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Disfruta Cada Evento</h1>
+            <p>Calzado artesanal, cómodo y bajo. Diseñado especialmente para novias, quinceañeras y damas de honor que quieren brillar y bailar toda la noche con total confort.</p>
+            <a href="#personalizacion" class="btn-primary">Personaliza tu Calzado</a>
+        </div>
+    </section>
+
+    <!-- Sección Colección Destacada -->
+    <section id="coleccion" class="collection">
+        <h2>Nuestra Colección</h2>
+        <p class="section-subtitle">Elegancia y funcionalidad para novias, quince y eventos importantes.</p>
+        
+        <div class="grid-products">
+            <div class="product-card">
+                <div class="product-img placeholder-1"></div>
+                <h3>Zapatillas Nupciales Confort</h3>
+                <p>Forradas en satén, con cordones de cinta de raso y plantilla acolchada extra suave.</p>
+                <span class="price">$145.000</span>
+            </div>
+            <div class="product-card">
+                <div class="product-img placeholder-2"></div>
+                <h3>Chatitas de Gala Satén</h3>
+                <p>Diseño delicado con detalles de pedrería fina y suela flexible para el baile.</p>
+                <span class="price">$130.000</span>
+            </div>
+            <div class="product-card">
+                <div class="product-img placeholder-3"></div>
+                <h3>Zapatillas de Quince Sparkling</h3>
+                <p>Detalles brillantes personalizados ideales para quinceañeras y damas de honor.</p>
+                <span class="price">$150.000</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Personalización (Interactivo con JS) -->
+    <section id="personalizacion" class="customization">
+        <div class="custom-container">
+            <h2>Diseño Personalizado</h2>
+            <p>Crea el calzado perfecto para tu evento. Elige el modelo, materiales y graba tus recuerdos para siempre.</p>
+            
+            <form id="customForm" class="custom-form">
+                <div class="form-group">
+                    <label for="evento">Tipo de Evento:</label>
+                    <select id="evento">
+                        <option value="Boda (Novia)">Boda (Novia)</option>
+                        <option value="Quinceaños">Quinceaños</option>
+                        <option value="Dama de Honor">Dama de Honor / Invitada</option>
+                        <option value="Otro Evento">Otro Evento Importante</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="modelo">Modelo de Calzado:</label>
+                    <select id="modelo">
+                        <option value="Zapatillas Bajas de Satén">Zapatillas Bajas de Satén</option>
+                        <option value="Chatitas Elegantes">Chatitas Elegantes</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="material">Material / Color Base:</label>
+                    <select id="material">
+                        <option value="Satén Blanco / Marfil">Satén Blanco / Marfil</option>
+                        <option value="Cuero Ecológico Blanco">Cuero Ecológico Blanco</option>
+                        <option value="Textil con Brillos (Silver/Gold)">Textil con Brillos (Silver/Gold)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="nombrePersonalizado">Nombre o Iniciales a grabar:</label>
+                    <input type="text" id="nombrePersonalizado" placeholder="Ej: Vale & Lucas / V">
+                </div>
+
+                <div class="form-group">
+                    <label for="fechaPersonalizada">Fecha del Evento:</label>
+                    <input type="text" id="fechaPersonalizada" placeholder="Ej: 14/11/2026">
+                </div>
+
+                <button type="button" id="btnCotizar" class="btn-primary">Enviar Pedido por WhatsApp</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contacto" class="footer">
+        <p>&copy; 2026 ValentinaHechoAmano. Todos los derechos reservados.</p>
+        <p>Godoy Cruz, Mendoza, Argentina | Envíos a todo el país.</p>
+    </footer>
+
+    <!-- Archivo JS Separado -->
+    <script src="scrip.js"></script>
+</body>
+</html>
